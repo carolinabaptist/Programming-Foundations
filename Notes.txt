@@ -1,0 +1,61 @@
+Lists
+
+Creation: l = [1, 2, 3, 4, 5]
+First element of a list: l[0]
+Last element of a list: l[-1]
+Unlike strings, lists can be modified: l[0] = 1
+Slicing: sublist = l[1:4]  # [2, 3, 4]
+
+Common Methods:
+l.append(a): adds a to the end of the list
+l.extend([a,b]): adds multiple elements to the end of the list
+l.insert(p,e): insert the element e in the position p
+l.remove(a): Removes the first occurrence of item a
+item = l.pop(p): Removes from list and returns item in position p
+l.clear(): Removes all items from list
+
+Simple Loop: prints every element of list
+l = [1, 2, 3, 4, 5]
+for item in l:
+    print(item)
+Output:
+1
+2
+3
+4
+5
+
+Loop with index: access elements and indexes
+l = [1, 2, 3, 4, 5]
+for i in range(len(l)):
+    print(f"Index {i}: {l[i]}")
+Output:
+Index 0: 1
+Index 1: 2
+Index 2: 3
+Index 3: 4
+Index 4: 5
+
+Loop with enumerate: access elements and indexes
+l = [1, 2, 3, 4, 5]
+for i, item in enumerate(l):
+    print(f"Index {i}: {item}")
+Output:
+Index 0: 1
+Index 1: 2
+Index 2: 3
+Index 3: 4
+Index 4: 5
+
+List Comprehension: Creates a new list based on the original, 
+applying an expression to each element.
+l = [1, 2, 3, 4, 5]
+sq = [x**2 for x in l]
+Output:
+[1, 4, 9, 16, 25]
+
+Loop with condition:
+l = [1, 2, 3, 4, 5]
+even = [x for x in l if x % 2 == 0]
+Output:
+[2,4]
