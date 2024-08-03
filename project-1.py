@@ -1,8 +1,3 @@
-###########################################
-# FP2019/2020 @ IST                       #
-# Projeto 1 - The Maze                    #
-# Ana Baptista - 95529                    #
-###########################################
 from queue import Queue
 
 def eh_labirinto(uni):
